@@ -8,7 +8,7 @@ then
 
     cd ~
     apt -y update && apt -y upgrade
-    apy -y install git vim net-tools zsh  wget unzip
+    apt -y install git vim net-tools zsh  wget unzip
     wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh 
     yes | install.sh 
     chsh -s $(which zsh)
