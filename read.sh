@@ -8,7 +8,7 @@ then
 
     cd ~
     apt -y update && apt -y upgrade
-    apy -y install git vim net-tools zsh  wget
+    apy -y install git vim net-tools zsh  wget unzip
     wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh 
     yes | install.sh 
     chsh -s $(which zsh)
@@ -32,7 +32,7 @@ elif [[ $VAR == "Centos" ]]
 then
     cd ~
     dnf -y update && dnf -y upgrade
-    dnf -y install git vim net-tools zsh  wget
+    dnf -y install git vim net-tools zsh  wget unzip
     wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
     yes | bash install.sh
     rm -rf install.sh
