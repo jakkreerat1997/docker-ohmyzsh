@@ -14,7 +14,7 @@ then
     chsh -s $(which zsh)
     git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-    sed -i 's/plugins=(git)/ plugins=( git zsh-syntax-highlighting zsh-autosuggestions)/g' ~/.zshrc \
+    sed -i 's/plugins=(git)/ plugins=( git zsh-syntax-highlighting zsh-autosuggestions)/g' ~/.zshrc 
     echo "ENABLE_CORRECTION=”true”" >> ~/.zshrc
     zsh
 
@@ -39,7 +39,7 @@ then
     git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
     chsh -s $(which zsh)
-    sed -i 's/plugins=(git)/ plugins=( git zsh-syntax-highlighting zsh-autosuggestions)/g' ~/.zshrc \
+    sed -i 's/plugins=(git)/ plugins=( git zsh-syntax-highlighting zsh-autosuggestions)/g' ~/.zshrc 
     echo "ENABLE_CORRECTION=”true”" >> ~/.zshrc
     zsh
 
