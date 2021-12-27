@@ -1,7 +1,7 @@
 #!/bin/bash
 echo -n "Enter Ubuntu or Centos: "
-READ VAR
-if [[$VAR == "Ubuntu"]]
+read VAR
+if [[ $VAR == "Ubuntu" ]]
 then
     apt-get update
     apt-get install ca-certificates curl gnupg lsb-release
@@ -16,7 +16,7 @@ then
     chmod +x /usr/local/bin/docker-compose
     ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
-elif [[$VAR == "Centos"]]
+elif [[ $VAR == "Centos" ]]
 then
     yum install -y yum-utils
     yum-config-manager \
